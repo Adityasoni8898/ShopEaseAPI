@@ -9,7 +9,15 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home_page():
-    data_set = {'Page': 'Home', 'Message': 'Sucess in loading', 'Timestamp' : time.time()}
+    data_set = {
+        'Page': 'Home', 
+        'Message': 'Sucess in loading', 
+        'Timestamp' : time.time(),
+        'Available Routes': [
+            "/snapdeal_search/?search=<search term>",
+            "/shopclues_search/?search=<search term>",
+            "/flipkart_search/?search=<search term>"
+        ]}
     json_dump = json.dumps(data_set)
     return json_dump
 
