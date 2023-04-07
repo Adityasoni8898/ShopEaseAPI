@@ -30,4 +30,3 @@ def flipkart_scraper(search_query):
 
     
 
-flipkart_scraper("saree")

@@ -3,7 +3,6 @@ import json, time, requests
 from bs4 import BeautifulSoup
 from Scraper.shopclues_scraper import shopclues_scraper
 from Scraper.snapdeal_scraper import snapdeal_scraper
-# from Scraper.flipkart_scraper import flipkart_scraper
 
 app = Flask(__name__)
 
